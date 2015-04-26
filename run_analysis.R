@@ -10,7 +10,7 @@ subject_test <- read.table('UCI HAR Dataset/test/subject_test.txt')
 features <- read.table('UCI HAR Dataset/features.txt', colClasses = c("character"))
 activity_labels <- read.table('UCI HAR Dataset/activity_labels.txt', col.names = c("ActivityId", "Activity"))
 
-library(plyr)
+require(plyr)
 
 #################################################################
 #1. Merges the training and the test sets to create one data set.
